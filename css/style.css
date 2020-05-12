@@ -138,21 +138,36 @@ header a:hover{
 /* About */
 article#main-col{
     float: left;
-    width: 75%;
+    width: 65%;
 }
 
 ul#about li{
     list-style: none;
     padding: 20px;
-    border: #CCCCCC solid 1px;
+    border: #2B7A78 solid 1px;
     margin-bottom: 5px;
-    background: #E6E6E6;
+    background: #DEF2F1;
+    border-radius: 20px;
 }
 
 ul#about img{
     width: 90px;
     float: left;
     padding: 15px;
+}
+
+aside#sidbar{
+    background-color: #DEF2F1;
+    border: #2B7A78 solid 1px;
+    border-radius: 20px;
+    width: 25%;
+    float: right;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+aside h3{
+    margin: 0px;
 }
 
 /* Video */
