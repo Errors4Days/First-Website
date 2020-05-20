@@ -204,3 +204,8 @@ aside h3{
 }
 
 /* Form */
+.bubble{
+    padding: 10px;
+    width: 40%;
+    margin: 0 auto;
+}
