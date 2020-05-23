@@ -14,9 +14,9 @@ body{
     background-color: #DEF2F1;
     border: #2B7A78 solid 1px;
     border-radius: 20px;
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
 }
 
 footer{
@@ -179,6 +179,16 @@ aside h3{
     margin: 0px;
 }
 
+.bubbleaside{
+    background-color: #DEF2F1;
+    border: #2B7A78 solid 1px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+
+    float: center;
+}
+
 /* Video */
 .vidbox{
     background-color: #3AAFA9;
@@ -206,12 +216,6 @@ aside h3{
 }
 
 /* Form */
-.bubble{
-    padding: 10px;
-    width: 30%;
-    margin: 10px auto;
-}
-
 input{
     width: 95%;
 }
