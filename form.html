@@ -54,26 +54,29 @@
             <div class="container">
                 <div class="bubble">
                     <h2>Javascript Random Integer</h2>
-                    <div>
-                        <label for="">Lower Bound: </label>
-                        <input class= "input2" type="number" id="l_bound" value="1"><br>
-                        <label for="">Upper Bound: </label>
-                        <input class= "input2" type="number" id="u_bound" value="100"><br>
+                    <div style="width: 50%; float: left">
+                        <label>Lower Bound: </label>
+                        <input class="input2" type="number" id="l_bound" placeholder="1"><br>
+                        <label>Upper Bound: </label>
+                        <input class="input2" type="number" id="u_bound" placeholder="100"><br>
+                    </div>
+                    <div style="width: 50%; float: right">
                         <p id="result">Result will appear here</p>
                     </div>
-                    <div>
-                        <button type="submit" class="button_1" onclick="getrandomInt()">Generate</button>
-                    </div>
+                    <button type="submit" style="margin-top: 10px;" class="button_1" onclick="getrandomInt()">Generate</button>
 
                     <script type="text/javascript">
                     function randInt(min, max){
-                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                        if(min < max){
+                            return Math.floor(Math.random() * (max - min + 1)) + min;
+                        }
+                        return "Error: lower bound ≥ upper bound"
                     }
 
                     function getrandomInt(){
                         var min = document.getElementById("l_bound").value;
                         var max = document.getElementById("u_bound").value;
-                        document.getElementById("result").innerHTML = randInt(min, max);
+                        document.getElementById("result").innerHTML = randInt(parseInt(min), parseInt(max));
                     }
                     </script>
                 </div>
