@@ -27,10 +27,11 @@
             </div>
         </header>
 
-        <!--form-->
+        <!--Form-->
         <section class="main">
             <div class="container">
                 <form class="bubble" target="form.html" method="post">
+                    <h2>Auto Reply Form</h2>
                     <div class="form">
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" placeholder="Name" size="40"><br>
@@ -45,6 +46,37 @@
                     </div>
                     <button type="submit" class="button_1">Submit</button>
                 </form>
+            </div>
+        </section>
+
+        <!--Random Number Generator-->
+        <section class="main">
+            <div class="container">
+                <div class="bubble">
+                    <h2>Javascript Random Integer</h2>
+                    <div>
+                        <label for="">Lower Bound: </label>
+                        <input class= "input2" type="number" id="l_bound" value="1"><br>
+                        <label for="">Upper Bound: </label>
+                        <input class= "input2" type="number" id="u_bound" value="100"><br>
+                        <p id="result">Result will appear here</p>
+                    </div>
+                    <div>
+                        <button type="submit" class="button_1" onclick="getrandomInt()">Generate</button>
+                    </div>
+
+                    <script type="text/javascript">
+                    function randInt(min, max){
+                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                    }
+
+                    function getrandomInt(){
+                        var min = document.getElementById("l_bound").value;
+                        var max = document.getElementById("u_bound").value;
+                        document.getElementById("result").innerHTML = randInt(min, max);
+                    }
+                    </script>
+                </div>
             </div>
         </section>
         <footer>

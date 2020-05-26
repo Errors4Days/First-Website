@@ -46,6 +46,11 @@ ul{
     color:#FEFFFF;
 }
 
+h2{
+    margin: 0px 0px;
+    text-align: center;
+}
+
 /* Header */
 header{
     background: #3AAFA9;
@@ -224,4 +229,8 @@ textarea{
     resize: none;
     width: 95%;
     height: 150px;
+}
+
+.input2{
+    width: 25%;
 }
